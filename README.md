@@ -49,17 +49,17 @@ $ npm run test
 
 ## API EndPoints
 
-| Description                     | Method | Route       |
-| ------------------------------- | ------ | ----------- |
-| Get dates of current week       | GET    | /api/dates  |
-| Get all events for specific day | GET    | /api/events |
-| Get an event                    | GET    | /api/event  |
-| Add an event                    | POST   | /api/event  |
-| Edit an event                   | PUT    | /api/event  |
-| Delete an event                 | DELETE | /api/event  |
-| Get all users                   | GET    | /api/users  |
-| Get an user                     | GET    | /api/user   |
-| Add an user                     | POST   | /api/user   |
+| Description                     | Method | Route         |
+| ------------------------------- | ------ | ------------- |
+| Get dates of current week       | GET    | /api/dates    |
+| Get all events for specific day | GET    | /api/events   |
+| Get an event                    | GET    | /api/event    |
+| Add an event                    | POST   | /api/event    |
+| Edit an event                   | PUT    | /api/event    |
+| Delete an event                 | DELETE | /api/event    |
+| Get all users                   | GET    | /api/users    |
+| Login user                      | GET    | /api/login    |
+| Register an user                | POST   | /api/register |
 
 ## Tech Stack
 

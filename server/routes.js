@@ -13,7 +13,7 @@ router.put('/event', controller.event.editEvent);
 
 router.delete('/event', controller.event.deleteEvent);
 
-// router.get('/users', controller.users.getAllUsers);
+router.get('/users', controller.users.getAllUsers);
 
 // router.get('/user', controller.user.getUser);
 
