@@ -15,10 +15,10 @@ app.use(bodyParser.json()); // for axios
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // express-session middleware
-app.use(session({}));
+app.use(session({ secret: 'ninja' }));
 
 // passport middleware
-app.use(initialize());
+app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/api', router);
