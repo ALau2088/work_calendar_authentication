@@ -69,11 +69,13 @@ $ npm run test
    - Implemented state manager with Redux to manage user state to eliminate passing down props thru multiple components and achieve constant time retrieval of user data.
 3. NodeJs/ExpressJs
    - Implemented server and RESTFul API with NodeJs and ExpressJs.
-4. SQLite3
+4. PassportJs/BcryptJs
+   - Limited access of a user's calendar by implementing user Authentication with session based local strategy so that only the authored user of the calendar can access.
+5. SQLite3
    - Implemented database with SQLite3 to conveniently store data without a server to handle multirow transactions.
-5. Axios
+6. Axios
    - Utilized Axios to make http requests.
-6. Miscellaneous Dev Tools
+7. Miscellaneous Dev Tools
    - Utilized Nodemon for auto reloading.
    - Utilized Postman for API testing.
    - Utilized Jest and Enzyme for unit and integration tests.

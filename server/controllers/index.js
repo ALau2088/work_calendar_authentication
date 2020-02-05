@@ -136,11 +136,32 @@ module.exports = {
       //     res.send(result);
       //   }
       // });
-      passport.authenticate('local', {
-        successRedirect: '/',
-        failureRedirect: '/login',
-        failureFlash: true
-      })(req, res, next);
+      passport.authenticate(
+        'local',
+        {
+          successRedirect: '/',
+          failureRedirect: '/login',
+          failureFlash: true
+        },
+        (err, user, info) => {
+          if (err) {
+            return next(err);
+          }
+          if (!user) {
+            console.log('no user');
+            return;
+          }
+          // req.logIn(user, err => {
+          //   if (err) {
+          //     return next(err);
+          //   }
+          //   console.log(user);
+          //   return;
+          // });
+          console.log('line 161', req);
+          res.send(user);
+        }
+      )(req, res, next);
     },
     addUser: (req, res) => {
       // check if user exists

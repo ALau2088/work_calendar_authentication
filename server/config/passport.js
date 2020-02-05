@@ -23,15 +23,19 @@ module.exports = function(passport) {
             } else if (isMatch) {
               return done(null, user);
             } else {
+              // message password incorrect
               return done(null, false, { message: 'Password Incorrect' });
             }
-            //create session
-            // else
-            // message password incorrect
           });
         }
-        done();
       });
     })
   );
+  //create session
+  passport.serializeUser((user, done) => done(null, user.email));
+
+  //verify session
+  passport.deserializeUser((email, done) => {
+    models.user.get([email], (err, user) => done(err, user));
+  });
 };
