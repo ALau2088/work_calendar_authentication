@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -25,6 +26,14 @@ app.use('/api', router);
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.send('Hello World!'));
+// app.get('/', (req, res) => res.send('Hello World!'));
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'), err => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

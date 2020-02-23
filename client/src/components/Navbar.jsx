@@ -11,17 +11,15 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <Fragment>
-        <nav className='navbar navbar-light bg-light'>
-          <a className='navbar-brand'>
-            {this.props.currentUserFirstName} {this.props.currentUserLastName}'s
-            Work Calendar
-          </a>
-          <AddUserModal />
+      <nav className='navbar navbar-light bg-light'>
+        <a className='navbar-brand'>
+          {this.props.currentUserFirstName} {this.props.currentUserLastName}'s
+          Work Calendar
+        </a>
+        <AddUserModal />
 
-          <UserSelect />
-        </nav>
-      </Fragment>
+        <UserSelect />
+      </nav>
     );
   }
 }
