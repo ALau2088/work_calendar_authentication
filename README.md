@@ -47,19 +47,19 @@ $ npm install
 $ npm run test
 ```
 
-## API EndPoints
+## API Resources
 
-| Description                     | Method | Route         |
-| ------------------------------- | ------ | ------------- |
-| Get dates of current week       | GET    | /api/dates    |
-| Get all events for specific day | GET    | /api/events   |
-| Get an event                    | GET    | /api/event    |
-| Add an event                    | POST   | /api/event    |
-| Edit an event                   | PUT    | /api/event    |
-| Delete an event                 | DELETE | /api/event    |
-| Get all users                   | GET    | /api/users    |
-| Login user                      | GET    | /api/login    |
-| Register an user                | POST   | /api/register |
+| Resource | Description                     | Method | Endpoint      |
+| -------- | ------------------------------- | ------ | ------------- |
+| Dates    | Get dates of current week       | GET    | /api/dates    |
+| Events   | Get all events for specific day | GET    | /api/events   |
+| Events   | Get an event                    | GET    | /api/event    |
+| Events   | Add an event                    | POST   | /api/event    |
+| Events   | Edit an event                   | PUT    | /api/event    |
+| Events   | Delete an event                 | DELETE | /api/event    |
+| User     | Get all users                   | GET    | /api/users    |
+| User     | Login user                      | GET    | /api/login    |
+| User     | Register an user                | POST   | /api/register |
 
 ## Tech Stack
 
